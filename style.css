@@ -204,7 +204,6 @@ nav .navlinks li a {
     transform: rotate(360deg);
 }
 
-
 /* About Section */
 .about-section {
     padding: 50px 20px;
@@ -215,10 +214,7 @@ nav .navlinks li a {
     align-items: center;
     text-align: center;
     flex-direction: column;
-	
 }
-
-
 
 /* Gray Box for Paragraph */
 .about-description {
@@ -237,10 +233,10 @@ nav .navlinks li a {
     color: #e5e5e5; /* Light gray text color */
     margin-bottom: 20px;
 }
+
 .about-section h2 {
     color: #007ced; /* Blue color to match other headings */
 }
-
 
 /* Skills Section */
 .skills-section {
@@ -568,6 +564,3 @@ nav .navlinks li a {
         text-align: center;
     }
 }
-
-
-
