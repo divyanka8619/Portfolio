@@ -458,4 +458,116 @@ nav .navlinks li a {
     color: white;
 }
 
+/* Media Queries for Smaller Screens (Mobile Devices) */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hero-pic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .btn-group .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .navlinks {
+        display: none; /* Hide the navigation links */
+    }
+
+    .togglebtn {
+        display: block;
+    }
+
+    .navlinks.open {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #222;
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .navlinks.open li {
+        margin: 1rem 0;
+    }
+
+    .about-description {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    .github-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Additional Media Query for Larger Mobile Devices or Tablets */
+@media screen and (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .btn-group .btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image img {
+        max-width: 400px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
+
+
 
