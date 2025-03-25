@@ -1,0 +1,461 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Body Settings */
+body {
+    overflow-x: hidden;
+}
+
+/* Hero Header */
+.hero-header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222; /* Dark background */
+}
+
+/* Wrapper for content */
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header with Logo and Navigation */
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Navigation Toggle Button (for small screens) */
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+/* Navigation Links */
+nav .navlinks {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Hero Section Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.container .hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hero-text h5 {
+    color: #e5e5e5;
+    font-size: 14px;
+}
+
+.hero-text h5 span {
+    color: #007ced;
+    font-size: 16px;
+}
+
+.hero-text h1 {
+    color: #007ced;
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: #e5e5e5;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Button Group */
+.btn-group {
+    margin: 45px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    transition: all 0.3s ease;
+}
+
+.btn.active {
+    border-color: #007ced;
+    background-color: #007ced;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* Social Icons */
+.hero-text .social i {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.hero-text .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #222; /* Black background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+	
+}
+
+
+
+/* Gray Box for Paragraph */
+.about-description {
+    background-color: #444; /* Gray background */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;  /* Optional: Adjust max width */
+    margin: 20px 0 40px 0;  /* Margin to create space above and below */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;  /* Align text to the left */
+}
+
+.about-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e5e5e5; /* Light gray text color */
+    margin-bottom: 20px;
+}
+.about-section h2 {
+    color: #007ced; /* Blue color to match other headings */
+}
+
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skills-section h2 {
+    color: #007ced;
+    margin-bottom: 30px;
+}
+
+.skills-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+}
+
+.skill-card h3 {
+    color: #007ced;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Change to column to stack heading and content */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.projects-heading {
+    color: #007ced; /* Blue color */
+    font-size: 2rem;
+    margin-bottom: 30px; /* Add some space below heading */
+}
+
+/* Project Item */
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+/* Project Image */
+.project-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Info */
+.project-info {
+    max-width: 60%;
+    padding-left: 20px;
+}
+
+/* Project Title */
+.project-info h3 {
+    font-size: 2rem;
+    color: #007ced;  /* Blue color like other titles */
+    margin-bottom: 10px;
+    text-align: center; /* Centered Title */
+}
+
+/* Project Description */
+.project-info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Project Skills */
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* GitHub Button Styling */
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007ced; /* Blue color like Easy Go heading */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+
+.github-button i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Icon size */
+}
+
+/* Hover effect */
+.github-button:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+    box-shadow: 0 12px 12px -10px rgb(0 0 0 / 50%);
+}
+
+/* Skill Box */
+.skill-box {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #444; /* Lighter Grey, like Express/React */
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Ensure text is center-aligned */
+}
+
+/* Heading - Contact Me (Blue color and centered) */
+.contact-heading {
+    color: #007ced; /* Blue color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+/* Contact Info Container */
+.contact-info {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Phone and Email Icons in Blue */
+.phone-icon, .email-icon {
+    color: #007ced; /* Blue icons */
+    margin-right: 10px;
+    font-size: 1.5rem; /* Increase icon size */
+}
+
+/* Contact Details - White color */
+.contact-detail {
+    color: white; /* White color for phone and email details */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Contact Item (Phone/Email) Styling */
+.contact-item {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
